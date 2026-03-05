@@ -49,9 +49,12 @@
             showPage('page-login');
         }
 
-        document.getElementById("username-input").addEventListener("keypress", function(event) {
-            if (event.key === "Enter") login();
-        });
+        const uInput = document.getElementById("username-input");
+        if (uInput) {
+            uInput.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") login();
+            });
+        }
 
         document.addEventListener('keydown', function(event) {
             if (!document.getElementById('page-quiz').classList.contains('active')) return;
@@ -70,13 +73,18 @@
 
     function showPage(id) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
+        
+        const pageEl = document.getElementById(id);
+        if (pageEl) pageEl.classList.add('active');
+        else console.error("HATA: HTML içinde '" + id + "' id'sine sahip bir div bulunamadı!");
         
         const infoPanel = document.getElementById('user-info-panel');
-        if (id === 'page-menu' || id === 'page-result') {
-            infoPanel.style.display = 'flex';
-        } else {
-            infoPanel.style.display = 'none';
+        if (infoPanel) {
+            if (id === 'page-menu' || id === 'page-result') {
+                infoPanel.style.display = 'flex';
+            } else {
+                infoPanel.style.display = 'none';
+            }
         }
 
         if(id === 'page-menu') {
