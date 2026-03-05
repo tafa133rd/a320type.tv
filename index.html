@@ -109,8 +109,11 @@
     }
 
     function updateUserInfo() {
-        document.getElementById('display-username').textContent = currentUser;
-        document.getElementById('display-username-quiz').textContent = currentUser;
+        let name1 = document.getElementById('display-username');
+        let name2 = document.getElementById('display-username-quiz');
+        
+        if (name1) name1.textContent = currentUser;
+        if (name2) name2.textContent = currentUser;
     }
 
     function login() {
