@@ -603,7 +603,28 @@
             { q: "CHECK ATT (AMBER) “CHECK ATT” APPEARS, WHEN THERE IS A DISAGREEMENT (OF A LEAST _? °) BETWEEN THE ATTITUDE INFORMATION DISPLAYED BY THE TWO PFDS. THE CHECK ATT FLAG APPEARS ON BOTH PFDS, AND A CAUTION APPEARS ON THE ECAM.", options: ["5", "10", "15", "20"], answer: "5" }
         ],
         landing_gear: [],
-        lights: [],
+        lights: [
+            // --- İLK METİN SORULARI (1-2) ---
+            { q: "THE NO SMOKING, FASTEN SEAT BELT, RETURN TO SEAT AND EXIT SIGNS COME ON WHEN :", options: ["THE APPROPRIATE SWITCHES ARE ON AND/OR EXCESSIVE CABIN ALTITUDE IS DETECTED", "THE APPROPRIATE SWITCHES ARE OFF AND/OR EXCESSIVE CABIN ALTITUDE IS DETECTED", "ALL OF THE ABOVE"], answer: "THE APPROPRIATE SWITCHES ARE ON AND/OR EXCESSIVE CABIN ALTITUDE IS DETECTED" },
+            { q: "WITH THE EMER EXIT LT SELECTOR IN THE ARM POSITION, CABIN EMERGENCY LIGHTS AND EXIT SIGNS AUTOMATICALLY COME ON WHEN :", options: ["DC BUS FAILS", "AC BUS 2 FAILS", "AC ESSENTIAL BUS FAILS", "AC BUS 1 OR DC SHED ESSENTIAL BUS FAILS"], answer: "AC BUS 1 OR DC SHED ESSENTIAL BUS FAILS" },
+
+            // --- ANNEX SORULARI ---
+            { q: "Please answer based on the given image:", img: "annexes/lights/lights_annex1.png", options: ["A", "B", "C", "D"], answer: "D" },
+            { q: "Please answer based on the given image:", img: "annexes/lights/lights_annex2.png", options: ["A", "B", "C", "D"], answer: "A" },
+            { q: "Please answer based on the given image:", img: "annexes/lights/lights_annex3.png", options: ["A", "B", "C", "D"], answer: "B" },
+            { q: "Please answer based on the given image:", img: "annexes/lights/lights_annex4.png", options: ["A", "B", "C", "D"], answer: "A" },
+            { q: "Please answer based on the given image:", img: "annexes/lights/lights_annex5.png", options: ["A", "B", "C", "D"], answer: "A" },
+
+            // --- KALAN METİN SORULARI (8-15) ---
+            { q: "When only batteries are supplying all electrical power, which cockpit light is on line?", options: ["None", "The right-hand dome light", "The left-hand flood light", "The right-hand flood light"], answer: "The right-hand dome light" },
+            { q: "How many beacon lights is the A320 fitted with?", options: ["None", "One", "Two", "Three"], answer: "Two" },
+            { q: "The company logo lights are on:", options: ["Only on ground", "Only when slats are extended", "On ground or when flaps are extended at least 15 Deg", "Always"], answer: "On ground or when flaps are extended at least 15 Deg" },
+            { q: "If during gear retraction, the pilot forgets to switch off the nose lights:", options: ["They will switch off automatically", "They will remain on until landing", "The takeoff light will switch off automatically to avoid overheat", "There will be an ECAM reminder after 5 minutes"], answer: "They will switch off automatically" },
+            { q: "When the EMER EXIT LT selector is at ARM, the overhead emergency lighting will come on only if:", options: ["Normal aircraft electrical power system fails", "DC SHED ESS Bus fails or AC Bus 1 fails", "Answer A or AC SHED ESS Bus fails", "Answer A or B"], answer: "Answer A or B" },
+            { q: "The ECAM MEMO “LDG LT” appears in green. This means that:", options: ["At least one landing light is extended", "At least one landing light is on", "Both landing lights are extended", "Both landing lights are retracted"], answer: "At least one landing light is extended" },
+            { q: "The right dome light is supplied by:", options: ["HOT BAT Bus 1", "HOT BAT BUS 2", "Internal batteries", "DC ESS"], answer: "DC ESS" },
+            { q: "The Stby compass light is supplied by:", options: ["AC ESS BUS 1", "DC ESS BUS 2", "DC ESS BUS", "HOT BAT Bus"], answer: "DC ESS BUS" }
+        ],
         oxygen: []
     };
 
