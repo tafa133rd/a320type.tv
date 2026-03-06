@@ -625,7 +625,50 @@
             { q: "The right dome light is supplied by:", options: ["HOT BAT Bus 1", "HOT BAT BUS 2", "Internal batteries", "DC ESS"], answer: "DC ESS" },
             { q: "The Stby compass light is supplied by:", options: ["AC ESS BUS 1", "DC ESS BUS 2", "DC ESS BUS", "HOT BAT Bus"], answer: "DC ESS BUS" }
         ],
-        oxygen: []
+        oxygen: [
+            // --- İLK METİN SORULARI (1-8) ---
+            { q: "What happens when the mask is used with the selector at 100 % position ?", options: ["Mask is supplied with diluted oxygen on demand.", "Mask is supplied with undiluted on demand.", "Mask is supplied with undiluted oxygen continuous flow."], answer: "Mask is supplied with undiluted on demand." },
+            { q: "A thermal discharge of the crew oxygen bottle is indicated by :", options: ["A thermal discharge message on ecam.", "The green overboard disch indicator missing.", "The red overboard disch indicator missing.", "No indication of thermal discharge is provided."], answer: "The green overboard disch indicator missing." },
+            { q: "In the passenger oxygen system , a chemical oxygen generator , once activated , delivers oxygen for :", options: ["30 minutes , ıf only one mask is in use.", "5 minutes , ıf all masks are used.", "13 minutes, regardless of the number of the masks used."], answer: "13 minutes, regardless of the number of the masks used." },
+            { q: "In the cockpit, ıf the master selector of the evac command panel is in \"cap\" position and the purser presses his evac \"comd\"push button , what will happen ?", options: ["Evac signals are activated in the cabin only.", "All evac signals are activated.", "Evac signals are activated from the cocpit only."], answer: "Evac signals are activated from the cocpit only." },
+            { q: "The captain may call all cabin attendants at the same time :", options: ["TRUE", "FALSE"], answer: "TRUE" },
+            { q: "Where are the evac signals located ?", options: ["In the cockpit and next to forward left and AFT left cabin door.", "In the cocpit and next to each cabin door.", "In the cocpit and next to each cabin door and emergency overwing exit."], answer: "In the cockpit and next to forward left and AFT left cabin door." },
+            { q: "MASKS ARE SUPPLIED WITH UNDILUTED OXYGEN ON DEMAND- IF THE CABIN ALTITUDE RISES ABOVE 14000 FT, PASSENGER OXYGEN MASKS WILL DROP OUT.", options: ["ONLY BY ACTUATION OF A SWITCH ON THE CAPTAIN PANEL.", "AUTOMATICALLY BY CABIN PRESSURE AND/OR CABIN ATTENDANT ACTION.", "AUTOMATICALLY BY CABIN PRESSURE AND/OR FLIGHT CREW ACTION."], answer: "AUTOMATICALLY BY CABIN PRESSURE AND/OR FLIGHT CREW ACTION." },
+            { q: "STATE LOCATION OF THE \" EVAC COMMAND \" SWITCHES\":", options: ["PURSER STATION AND CABIN ATTENDANT AFT LEFT.", "PURSER STATION AND PILOT OVERHEAD PANEL.", "PILOT OVERHEAD PANEL AND ALL CABIN ATTENDANT STATION."], answer: "PURSER STATION AND PILOT OVERHEAD PANEL." },
+
+            // --- ANNEX SORULARI ---
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex1.png", options: ["A", "B", "C", "D"], answer: "B" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex2.png", options: ["A", "B", "C"], answer: "C" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex3.png", options: ["A", "B"], answer: "A" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex4.png", options: ["A", "B", "C"], answer: "B" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex5.png", options: ["A", "B", "C", "D"], answer: "C" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex6.png", options: ["A", "B", "C", "D"], answer: "B" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex7.png", options: ["A", "B", "C", "D"], answer: "A" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex8.png", options: ["A", "B", "C"], answer: "C" },
+            { q: "Please answer based on the given image:", img: "annexes/oxygen/oxygen_annex9.png", options: ["A", "B", "C", "D"], answer: "A" },
+
+            // --- KALAN METİN SORULARI (18-37) ---
+            { q: "On which ECAM page could the flight crew check the exact pressure of the oxygen cylinder?", options: ["The COND page", "The PRESS page", "The STATUS page", "The DOORS page"], answer: "The DOORS page" },
+            { q: "What is indicated by a missing green thermal plug during an exterior preflight?", options: ["An external fire discharge has been activated", "This is normal indication, the gren thermal plug only appears if the oxygen cylinder is low", "The crew oxygen bottle is empty", "An oxygen system overpressure or the thermal discharge"], answer: "An oxygen system overpressure or the thermal discharge" },
+            { q: "Approximately how long are the passenger oxygen generators able to produce oxygen?", options: ["30 minutes", "25 minutes", "20 minutes", "15 minutes"], answer: "15 minutes" },
+            { q: "What is the main difference between the crew and the passenger oxygen system?", options: ["Both the crew and passengers are supplied with oxygen from chemical oxygen generators", "The crew has an oxygen bottle for an emergency back-up supply", "There is no difference; both are served by oxygen cylinders", "Crew is supplied from an oxygen cylinder; passengers are supplied by chemical oxygen generators"], answer: "Crew is supplied from an oxygen cylinder; passengers are supplied by chemical oxygen generators" },
+            { q: "What is the purpose of the CREW SUPPLY push buton?", options: ["When selected to ON, it allows the flow of low pressure oxygen to the crew’s masks", "In case of low cylinder pressure it allows the crew to tap into the passenger oxygen system", "When selected to ON. İt supplies oxygen to the Captain & F/O only (jumpseats are not supplied)"], answer: "When selected to ON, it allows the flow of low pressure oxygen to the crew’s masks" },
+            { q: "What happens when the mask is used with the selection at %100 position?", options: ["Mask is supplied with undiluted oxygen on demand", "Mask is supplied with diluted oxygen on demand", "Mask is supplied with undiluted oxygen continuous flow", "Mask is not supplying any oxygen at all"], answer: "Mask is supplied with undiluted oxygen on demand" },
+            { q: "At approximately what cabin altitude should the passenger oxygen masks drop?", options: ["10,000 feet (+100, -500 ft)", "15,000 feet", "14,000 feet (+250, -750 ft)", "12,500 feet (+ or – 500 ft)"], answer: "14,000 feet (+250, -750 ft)" },
+            { q: "Illumination of the SYS ON light is an indication that:", options: ["The crew oxygen cylinder is empthy", "Electrical power has been sent to deploy the masks, either manually or automatically", "All of the passenger masks have deployed", "The crew must depress the MASK MAN ON pb in order to deploy the masks"], answer: "Electrical power has been sent to deploy the masks, either manually or automatically" },
+            { q: "There are oxygen generators in each aircraft’s galley", options: ["True", "False"], answer: "True" },
+            { q: "What will depressing the guarded MASK MAN ON pb accomplish?", options: ["It manually sends a signal to open the oxygen mask doors", "A signal is sent to the chemical oxygen generators to start the flow of oxygen to the masks", "Both are correct"], answer: "It manually sends a signal to open the oxygen mask doors" },
+            { q: "When does passenger oxygen flow start?", options: ["When cabin altitude exceeds 14,000 feet", "When the oxygen button is pushed", "When the oxygen doors open", "When the mask is pulled toward the seat"], answer: "When the mask is pulled toward the seat" },
+            { q: "Where is the oxygen blow out disk that is inspected during the pre-flight inspection?", options: ["Right forward fuselage", "Left forward fuselage", "Right backward fuselage", "Left backward fuselage"], answer: "Left forward fuselage" },
+            { q: "A Manual Release Tool (MRT) is available in the event a PSU door malfunction and must be manually opened. These are located at ________ .", options: ["Cockpit", "Forward Galley", "Backward Galley", "Under each flight attendants seat"], answer: "Under each flight attendants seat" },
+            { q: "If the crew supply pb is off, the word OXY will display _____________ on the DOOR/OXY ECAM page.", options: ["Red", "Green", "Amber", "White"], answer: "Amber" },
+            { q: "The Oxygen Cylinder is located in the ________________.", options: ["Cargo Compartment", "Tail", "Avionics Compartment", "Right side of the F/O seat"], answer: "Avionics Compartment" },
+            { q: "The cabin oxygen masks are released by a door that can be opened ____.", options: ["Automatically", "Manually by MASK MAN ON p/b", "With MRT", "All of the above"], answer: "All of the above" },
+            { q: "When a passenger mask is donned, most of the air the person receives is provided by the ambient cabin.", options: ["True", "False"], answer: "True" },
+            { q: "The cabin oxygen system is separate from the cockpit oxygen system.", options: ["True", "False"], answer: "True" },
+            { q: "On each oxygen mask stowage box, a _______________ will appear when oxygen is flowing to the mask.", options: ["Yellow Cross", "Green Line", "Red Circle", "Blue Cross"], answer: "Yellow Cross" },
+            { q: "The OXYGEN panel is located ______________________.", options: ["On the forward right side of the overhead panel", "On the forward left side of the overhead panel", "On the forward left side of the pedestal", "On the forward right side of the pedestal"], answer: "On the forward left side of the overhead panel" }
+        ]
     };
 
     // --- SİSTEM MANTIĞI ---
